@@ -3,9 +3,9 @@
 A **Retrieval-Augmented Generation (RAG)** system that recommends cooking recipes based on a user query.  
 The project was developed in **Google Colab** and is also available on **Kaggle**.
 
-- 🧪 Kaggle (notebook): https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
-- ▶️ Colab (notebook): https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
-- 📦 Hugging Face Datasets (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
+- Kaggle (notebook): https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
+- ▶Colab (notebook): https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
+- Hugging Face Datasets (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
 
 ---
 
@@ -29,7 +29,7 @@ fine-tuning BART+LoRA, generating summaries, computing `all-mpnet-base-v2` embed
 **Stage II – RAG (inference)**  
 vectorizing the user query, retrieving top-k from FAISS, and composing the final answer with Groq (with the culinary-only filter).
 
-> If you don’t want to run Stage I, you can use prebuilt artifacts from HF and jump straight to Stage II.
+If you don’t want to run Stage I, you can use prebuilt artifacts from HF and jump straight to Stage II.
 
 ---
 
@@ -68,7 +68,7 @@ The notebook includes a loader that tries, in order: `ENV` → `Kaggle Secrets` 
 4. Run sections 1 → 10 in order.  
    - §6: retriever, §7: generator (Groq), §8: culinary-only filter, §9: batch tests, §10: interactive mode.
 
-> Note: Kaggle **Commit / Run All** executes in a non-interactive environment, so use §9 (batch). For interactive input (§10), use **Colab** or **Kaggle Edit** mode.
+Note: Kaggle **Commit / Run All** executes in a non-interactive environment, so use §9 (batch). For interactive input (§10), use **Colab** or **Kaggle Edit** mode.
 
 ### 5.2. Full pipeline (build everything)
 1. Set `RAG_ONLY = False`.  
@@ -81,7 +81,7 @@ The notebook includes a loader that tries, in order: `ENV` → `Kaggle Secrets` 
 
 Large models (e.g., `llama-3.3-70b-versatile`) consume daily token budget (TPD) faster.  
 If you hit **`RateLimitError (429)`**:
-- temporarily switch to `llama-3.1-8b-instant`,
+- temporarily switch to `llama-3.1-8b-instant` or any available model of your choice,
 - reduce `top_k` (e.g., to 3) and `max_tokens` (e.g., 384–512),
 - try again later (rolling window).
 
@@ -91,6 +91,6 @@ If you hit **`RateLimitError (429)`**:
 
 Project maintained as **“Recipes RAG.”**  
 Links:
-- 🧪 Kaggle: https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
-- ▶️ Colab: https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
-- 📦 Hugging Face (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
+- Kaggle: https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
+- ▶Colab: https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
+- Hugging Face (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
