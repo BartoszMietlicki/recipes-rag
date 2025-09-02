@@ -4,7 +4,7 @@ A **Retrieval-Augmented Generation (RAG)** system that recommends cooking recipe
 The project was developed in **Google Colab** and is also available on **Kaggle**.
 
 - Kaggle (notebook): https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
-- ▶Colab (notebook): https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
+- Colab (notebook): https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
 - Hugging Face Datasets (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
 
 ---
@@ -92,5 +92,5 @@ If you hit **`RateLimitError (429)`**:
 Project maintained as **“Recipes RAG.”**  
 Links:
 - Kaggle: https://www.kaggle.com/code/bartekmietlicki/recipes-rag  
-- ▶Colab: https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
+- Colab: https://colab.research.google.com/drive/1UcibjTWtYVBQYuAVxIfq2Vs5p8e2doKU  
 - Hugging Face (artifacts): https://huggingface.co/datasets/bartekmietlicki/recipes-rag
